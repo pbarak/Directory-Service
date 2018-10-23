@@ -198,18 +198,6 @@ public class DirectoryApi extends HttpServlet {
 			JSONObject resJSON = Image.postImage(username, request);
 			out.print(resJSON);
 			out.flush();
-			int i = 0;
-
-			/*
-			 * while(i<30) { if (resJSON!=null) { break; } else { try {
-			 * TimeUnit.SECONDS.sleep(1); } catch (InterruptedException e) { // TODO
-			 * Auto-generated catch block e.printStackTrace(); } ++i; if (i == 30) { try {
-			 * throw new TimeoutException("Timed out after waiting for " + i + " seconds");
-			 * } catch (TimeoutException e) { // TODO Auto-generated catch block
-			 * e.printStackTrace(); } }
-			 * 
-			 * } }
-			 */
 			return;
 		}
 
